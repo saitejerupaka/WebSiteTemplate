@@ -1,0 +1,21 @@
+{
+  "name": "WebSiteTemplate",
+  "homepage": "https://github.com/saitejerupaka/WebSiteTemplate",
+  "authors": [
+    "Saitej Erupaka <serupaka@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angulartics-google-analytics": "^0.1.4"
+  }
+}
