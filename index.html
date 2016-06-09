@@ -18,12 +18,12 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#/MySelf">Myself<span class="sr-only">(current)</span></a></li>
-        <li><a href="#/Degrees">Degree</a></li>
-        <li><a href="#/Experience">Experience</a></li>
-        <li><a href="#/Work">Work</a></li>
-        <li><a href="#/Recognition">Recognition</a></li>
-        <li><a href="#/Certifications">Certification</a></li>
+        <li class="active"><a href="#/MySelf" analytics-on analytics-event="myelf">Myself<span class="sr-only">(current)</span></a></li>
+        <li><a href="#/Degrees" analytics-on analytics-event="degree">Degree</a></li>
+        <li><a href="#/Experience" analytics-on analytics-event="experience">Experience</a></li>
+        <li><a href="#/Work" analytics-on analytics-event="work">Work</a></li>
+        <li><a href="#/Recognition" analytics-on analytics-event="recognition">Recognition</a></li>
+        <li><a href="#/Certifications" analytics-on analytics-event="certification">Certification</a></li>
         </ul>
     </div>
   </div>
@@ -32,6 +32,8 @@
 </body>
 <script src="angular.js"></script>
 <script src="angular-route.js"></script>
+<script src="/bower_components/angulartics/dist/angulartics.min.js"></script>
+<script src="/bower_components/angulartics-google-analytics/dist/angulartics-google-analytics.min.js"></script>
 <script src="jquery.js"></script>
 <script src="dist/js/bootstrap.min.js"></script>
 <script src="App.js"></script>
@@ -43,5 +45,16 @@ $(document).ready(function(){
         //event.preventDefault();
     });
 });
+
+
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-79067605-1', 'auto');
+
 </script>
 </html>

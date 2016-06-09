@@ -1,0 +1,4 @@
+bower_components
+
+!bower_components/angulartics/dist
+!bower_components/angulartics-google-analytics/dist
